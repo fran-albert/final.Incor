@@ -1,0 +1,194 @@
+:root {
+  --verde: #046A52;
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --gris: #757575;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--blanco);
+}
+h1 {
+  color: var(--verde);
+  font-size: 2.5rem;
+  text-align: center;
+}
+h1 span {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+  font-weight: initial;
+}
+a {
+  text-decoration: none;
+}
+.textoCentrado {
+  text-align: center;
+}
+/* .logoPrincipal {
+  display: block;
+  margin: auto;
+} */
+h4 {
+  margin-right: 5px;
+}
+.principal {
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logoPrincipal {
+  display: block;
+  margin: 0 auto;
+}
+.registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Navegacion  */
+
+.nav-bg {
+  background-color: var(--verde);
+}
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.navegacion a {
+  padding: 1rem 2rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.navegacion a:hover {
+  background-color: #6d9dc5;
+  color: #222831;
+}
+.navegacion a:last-of-type {
+  margin-bottom: 0;
+}
+
+.botonWhatsapp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #9d9d9d;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Nosotros */
+
+.staff {
+  background-color: #ffeded;
+}
+.staff h3 {
+  color: #4db3b0;
+}
+.staff h3, li {
+  font-size: 1.2rem;
+}
+.staff {
+  background-color: #ffeded;
+  padding: 1rem 0;
+  margin: 1rem 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;  
+}
+.especialidades {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.especialidades > div {
+  width: calc(100%/3);
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 12rem;
+}
+li {
+  padding: 0.2rem;
+  list-style-image: url(../img/icons8-360-grados-10.png);
+}
+.equipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.solicito-turno {
+  display: flex;
+  align-items: center;
+} 
+.solicito-turno h4 {
+  color: green;
+}
+
+/* Estilos de Textos */
+
+.negrita {
+  font-weight: bold;
+}
+
+/* Turnos */
+
+.contenedor-turnos {
+  padding: 1rem 0;
+  margin: 1rem 2rem;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.medicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 1rem 5rem;
+  border-radius: 10% 30% 50% 70%;
+  background-color:#C9CCD5;
+}
+.medicos h4 {
+  padding: 2px;
+  font-size: 14px;
+}
+.medicos a {
+  border-radius: 20px;
+  background-color: var(--verde);
+  padding: 0.5rem 0.5rem;
+  color: var(--blanco);
+  font-weight: bold;
+}
