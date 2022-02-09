@@ -1,5 +1,5 @@
 :root {
-  --verde: #046A52;
+  --verde: #046a52;
   --blanco: #ffffff;
   --oscuro: #212121;
   --gris: #757575;
@@ -35,6 +35,8 @@ a {
 } */
 h4 {
   margin-right: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .principal {
   background-color: var(--blanco);
@@ -50,6 +52,10 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.registro a {
+  text-decoration: none;
+  color: black;
 }
 .centrado {
   display: flex;
@@ -106,6 +112,28 @@ h4 {
   align-items: center;
 }
 
+/* INICIO */
+
+.container {
+  padding: 1rem;
+}
+.row {
+  padding: 1rem;
+}
+.col {
+  padding: 1rem;
+}
+.ubi {
+  display: flex;
+  justify-content: center;
+}
+.redes {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Nosotros */
 
 .staff {
@@ -114,7 +142,8 @@ h4 {
 .staff h3 {
   color: #4db3b0;
 }
-.staff h3, li {
+.staff h3,
+li {
   font-size: 1.2rem;
 }
 .staff {
@@ -124,7 +153,7 @@ h4 {
   max-width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 .especialidades {
   display: flex;
@@ -132,7 +161,7 @@ h4 {
   margin-bottom: 1rem;
 }
 .especialidades > div {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   display: flex;
   justify-content: flex-start;
   padding: 0 12rem;
@@ -150,7 +179,7 @@ li {
 .solicito-turno {
   display: flex;
   align-items: center;
-} 
+}
 .solicito-turno h4 {
   color: green;
 }
@@ -177,9 +206,12 @@ li {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 1rem 5rem;
-  border-radius: 10% 30% 50% 70%;
-  background-color:#C9CCD5;
+  margin: 1rem;
+  border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
+  border: 7px solid #51abb3;
+  background-color: #e0d0b1;
 }
 .medicos h4 {
   padding: 2px;
@@ -191,4 +223,24 @@ li {
   padding: 0.5rem 0.5rem;
   color: var(--blanco);
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .contenedor-turnos {
+    padding: 1rem 0;
+    margin: 1rem 2rem;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .logoPrincipal {
+    width: 150px;
+  }
+  .registro h4 {
+    font-size: 15px;
+  }
+  .registro img {
+    width: 20px;
+  }
 }
