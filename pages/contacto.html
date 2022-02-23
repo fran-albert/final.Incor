@@ -56,32 +56,90 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="container">
       <h2 class="textoCentrado">Contáctanos</h2>
-      <form action="" class="centrado">
-        <fieldset>
-          <label for="nombre">Nombre</label>
-          <input type="text" placeholder="Nombre" id="nombre" />
-          <br /><br />
-          <label for="apellido">Apellido</label>
-          <input type="text" placeholder="Apellido" id="apellido" />
-          <br /><br />
-          <label for="email">Email</label>
-          <input type="email" placeholder="Email" id="email" />
-          <br /><br />
-          <label for="">Dejanos tu consulta</label>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Escribe tu consulta"
-          ></textarea>
-          <br /><br />
-          <input type="submit" />
-        </fieldset>
-      </form>
       <section>
+        <article class="formulario">
+          <h2 class="textoCentrado">Pedí un turno</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Apellido</label>
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Telefono">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Dirección">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Provincia</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elegir...</option>
+                <option>Buenos Aires</option>
+                <option>Capital Federal</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Ríos</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Río Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego</option>
+                <option>Tucumán</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Declaro que no estuve en contacto estrecho en los últimos días con Covid 19.
+                </label>
+              </div>
+            </div>
+            <div>
+              <button>
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Enviar</span>
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
         <div class="botonWhatsapp">
           <a href="https://wa.me/5493465521937">
             <img
