@@ -218,8 +218,8 @@ li {
   border-radius: 50px 50px 50px 50px;
   -moz-border-radius: 50px 50px 50px 50px;
   -webkit-border-radius: 50px 50px 50px 50px;
-  border: 7px solid #51abb3;
-  background-color: #e0d0b1;
+  border: 7px solid #96C7C1;
+  background-color: #E0D0B1;
   h4 {
     padding: 2px;
     font-size: 14px;
@@ -236,8 +236,8 @@ li {
   border-radius: 50px 50px 50px 50px;
   -moz-border-radius: 50px 50px 50px 50px;
   -webkit-border-radius: 50px 50px 50px 50px;
-  border: 7px solid #51abb3;
-  background-color: #e0d0b1;
+  border: 7px solid #000000;
+  background-color: #ffffff;
 
   button {
     font-family: inherit;
@@ -307,7 +307,7 @@ li {
     margin: 1rem 2rem;
     max-width: 90%;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
   }
   .logoPrincipal {
